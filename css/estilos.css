@@ -1,0 +1,135 @@
+*{
+  padding:0;
+  margin:0;
+  font-family:  georgia , Verdana;
+  font-size: 20px;
+}
+
+
+h1{
+  color: white;
+  padding: 30px;
+}
+
+h2{
+  color:gray;
+  padding: 20px;
+}
+
+#inicio{
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+}
+
+#inicio form{
+  background: #0BD2ED;
+  width: 500px;
+  padding: 20px 0px 20px 0px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#inicio form input{
+  margin-bottom: 10px;
+  height: 20px;
+  width: 90%;
+}
+
+#inicio form label{
+   font-size: 20px;
+   margin-left: 0px;
+}
+
+#inicio input[type="text"],
+#inicio input[type="number"],
+#inicio input[type="email"], number
+#inicio input[type="number"]{
+   display: block;
+   margin-left: 25px;
+   margin-right: 0px;
+   margin-top: 5px;
+   padding: 5px;
+   border-radius: 5px;
+   text-align: center;
+   text-transform: uppercase;
+
+}
+
+#inicio input[type='submit']{
+   margin-top: 10px;
+   padding: 25px;
+   background: #090909;
+   font-weight: normal;
+   text-align: center;
+   line-height: 5px;
+   color: white;
+   border-radius: 10px;
+   margin-left: 13px;
+   transition: all 200ms;
+}
+
+#inicio input[type='submit']:hover{
+   background:#5E4F4F;
+}
+
+
+.boton-nuevo{
+  text-decoration: none;
+  cursor: pointer;
+  color:black;
+
+}
+
+.seccion-agenda{
+
+ /* margin: 0 auto; /*Con esto centramos la tabla*/
+    margin-right: 100px;
+
+}
+
+.seccion-agenda table{
+  width: center;
+  height: auto;
+  margin: auto; /*Con esto centramos la tabla*/
+  text-align: center;
+}
+
+.seccion-agenda table thead td{
+  background: #070707;
+  color: white;
+}
+
+.seccion-agenda td{
+  padding: 5px;
+}
+
+.seccion-agenda a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight:bold;
+  margin-left: auto;
+  margin-right: auto;
+  background:yellow;
+  color: #0505FD;
+  padding: 5px;
+  font-family: georgia;
+}
+
+.seccion-agenda a:hover{
+  color: black;
+}
+
+.centrar-texto{
+  text-align:center;
+}
+
+.boton-guardar{
+  background-color: blue;
+  text-align: center;
+  padding: 25px;
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #39c;
+  margin:5px 10px 100px 10px;
+  outline: none;
+}
