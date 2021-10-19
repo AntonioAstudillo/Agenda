@@ -60,11 +60,11 @@ class OperacionesSQL{
      $edad = strtolower($valor['edad']);
      $correo = strtolower($valor['correo']);
      $telefono = strtolower($valor['telefono']);
-
+     $pais = strtolower($valor['pais']);
      $sistema = $_SERVER['HTTP_USER_AGENT'];
 
 
-     $consulta ="INSERT INTO contactos VALUES(null,'$nombre','$apellido','$telefono','$correo','$edad','$sistema')";
+     $consulta ="INSERT INTO contactos VALUES(null,'$nombre','$apellido','$telefono','$pais','$correo','$edad','$sistema')";
 
      $respuesta = $this->conexion->query($consulta);
 
