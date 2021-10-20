@@ -11,13 +11,14 @@ if(isset($_POST['buscar']) &&  !empty($_POST['buscar'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Agenda de Contactos</title>
     <!-- <link rel="stylesheet" type="text/css" href="css/estilos.css"> -->
     <script type="text/javascript" src="js/validaciones.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
   </head>
   <body>
      <div class="container-fluid">
@@ -45,17 +46,16 @@ if(isset($_POST['buscar']) &&  !empty($_POST['buscar'])){
          </form>
       </div>
         <section class="seccion-agenda">
-           <table class="table table-sm">
+           <table id="tabla" class="table table-sm" class="display">
                <thead>
-
                    <tr>
-                       <th scope="col">Id</th>
-                       <th scope="col">Nombre</th>
-                       <th scope="col">Apellido</th>
-                       <th scope="col">Telefono</th>
-                       <th scope="col">Correo</th>
-                       <th scope="col">Edad</th>
-                       <th scope="col" rowspan="4">Operaciones</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Operaciones</th>
                    </tr>
                </thead>
                <tbody>
@@ -85,9 +85,8 @@ if(isset($_POST['buscar']) &&  !empty($_POST['buscar'])){
             <a href="https://github.com/AntonioAstudillo">  Antonio Astudillo</a>
          </div>
       </footer>
-
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" charset="utf-8"></script>
+  <script src="js/script.js"></script>
 </html>
